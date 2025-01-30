@@ -108,7 +108,7 @@ abstract class UseCase<T, Params> {
   }
 
   /// Builds the [Stream] to be subscribed to. [Params] is required
-  /// by the [UseCase] to retrieve the appropraite data from the repository
+  /// by the [UseCase] to retrieve the appropriate data from the repository
   Future<Stream<T?>> buildUseCaseStream(Params? params);
 
   /// Subscribes to the [Observerable] with the [Observer] callback functions.
